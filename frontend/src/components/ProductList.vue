@@ -24,7 +24,7 @@
                         >
                         <a
                         class="button is-danger is-small"
-                        @click="deleteProduct(item.product_id)"
+                        @click="destroyProduct(item.product_id)"
                         >Delete</a
                         >
                   </td>
