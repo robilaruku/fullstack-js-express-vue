@@ -39,7 +39,7 @@ export const insertProduct = (data, result) => {
 
 // update product to database 
 export const upateProdctById = (data, id, result) => {
-    qb.query("UPDATE product SET product_name = ?, product_price = ? WHERE product_id = ?", [data.product_name, data.product_price, id], (err, results) => {
+    db.query("UPDATE product SET product_name = ?, product_price = ? WHERE product_id = ?", [data.product_name, data.product_price, id], (err, results) => {
         if (err) {
           console.log(err);
           result(err, null);
